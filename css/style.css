@@ -1,0 +1,85 @@
+.container {
+    margin-inline: auto;
+    padding: 0 1.5rem;
+    max-width: calc(1110px + 2rem);
+    background-color:cornsilk;
+}
+
+.hero__inner,
+.greetings__inner,
+.sweety__inner,
+.schedule__inner,
+.location__inner,
+.dresscode__inner,
+.wishes__inner,
+.blank__inner,
+.contact__inner,
+.waiting__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4rem;
+    min-height: 100vh;
+}
+
+.hero {
+    background-color: beige;
+}
+
+.hero__photos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+}
+
+.hero__description {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero__title {
+    text-align: center;
+}
+
+.hero_equal {
+    text-align: center;
+}
+
+.greetings {
+    background-color:azure;
+}
+
+.sweety {
+    background-color: beige;
+}
+
+.schedule {
+    background-color:azure;
+
+}
+
+.location {
+    background-color: beige;
+}
+
+.dresscode {
+    background-color:azure;
+}
+
+.wishes {
+    background-color: beige;
+}
+
+.blank {
+    background-color:azure;
+}
+
+.contact {
+    background-color: beige;
+}
+
+.waiting {
+    background-color:azure;
+}
