@@ -6,8 +6,11 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/photo_card.css">
+    <link rel="stylesheet" href="./css/schedule.css">
     <title>Document</title>
 </head>
 <body>
@@ -15,15 +18,22 @@
     <div class="container">
         <div class="hero__inner">
             <div class="hero__photos">
-                <img class="infinite_shake" src="https://placehold.jp/300x300.png" alt="Sasha">
-                <img class="infinite_shake" src="https://placehold.jp/300x300.png" alt="Ksusha">
+                <div class="common_card">
+                    <img class="common_card__img" src="https://placehold.jp/300x300.png" alt="Sasha">
+                    <h3 class="common_card__text">Саша</h3>
+                </div>
+                <div class="common_card">
+                    <img class="common_card__img" src="https://placehold.jp/300x300.png" alt="Ksusha">
+                    <h3 class="common_card__text">Настя</h3>
+                </div>
             </div>
 
             <div class="hero__description">
                 <h1 class="hero__title">
                     Саша + Ксюша
+                    <br>
+                    =
                 </h1>
-                <p class="hero__equal">=</p>
                 <div class="hero__icon">
                     <img class="hero__icon_img" src="https://placehold.jp/100x100.png" alt="heart">
                 </div>
@@ -35,7 +45,7 @@
 <div class="greetings">
     <div class="container">
         <div class="greetings__inner">
-            <h2>
+            <h2 class="greetings__title">
                 Узнали?
             </h2>
             <p>
@@ -45,8 +55,9 @@
             <div>
                 <img src="https://placehold.jp/100x100.png" alt="star">
             </div>
-            <div>
-                <img src="https://placehold.jp/300x300.png" alt="vmeste">
+            <div class="common_card">
+                <img class="common_card__img" src="https://placehold.jp/300x300.png" alt="vmeste">
+                <h3 class="common_card__text">сердца полны любви</h3>
             </div>
         </div>
     </div>
@@ -55,7 +66,7 @@
 <div class="sweety">
     <div class="container">
         <div class="sweety__inner">
-            <h2>
+            <h2 class="sweety__title">
                 Дорогие и любимые
             </h2>
             <p>
@@ -73,43 +84,43 @@
 <div class="schedule">
     <div class="container">
         <div class="schedule__inner">
-            <h2>
+            <h2 class="schedule__title">
                 Программа дня
             </h2>
-            <div>
-                <span>15:30</span>
+            <div class="schedule__item">
+                <h3 class="schedule__time">15:30</h3>
                 <img src="https://placehold.jp/100x100.png" alt="star">
-                <div>
-                    <h3>
+                <div class="schedule__content">
+                    <h4 class="schedule__content__title">
                         Welcome
-                    </h3>
-                    <p>
+                    </h4>
+                    <p class="schedule__content__body">
                         Время пролетит незаметно за игристым и новыми знакомствами
                     </p>
                 </div>
             </div>
         
-            <div>
-                <span>16:00</span>
+            <div class="schedule__item">
+                <h3 class="schedule__time">16:00</h3>
                 <img src="https://placehold.jp/100x100.png" alt="star">
-                <div>
-                    <h3>
+                <div class="schedule__content">
+                    <h4 class="schedule__content__title">
                         Церемония
-                    </h3>
-                    <p>
+                    </h4>
+                    <p class="schedule__content__body">
                         Будем очень рады разделить этот важный момент с вами
                     </p>
                 </div>
             </div>
         
-            <div>
-                <span>17:00</span>
+            <div class="schedule__item">
+                <h3 class="schedule__time">17:00</h3>
                 <img src="https://placehold.jp/100x100.png" alt="star">
-                <div>
-                    <h3>
+                <div class="schedule__content">
+                    <h4 class="schedule__content__title">
                         Банкет
-                    </h3>
-                    <p>
+                    </h4>
+                    <p class="schedule__content__body">
                         Насладитесь этим вечером, будет много любви, танцев и веселья
                     </p>
                 </div>
@@ -121,16 +132,17 @@
 <div class="location">
     <div class="container">
         <div class="location__inner">
-            <h2>
+            <h2 class="location__title">
                 Место проведения
             </h2>
-            <div>
-                <img src="https://placehold.jp/300x300.png" alt="mesto">
+            <div class="common_card">
+                <img class="common_card__img" src="https://placehold.jp/300x300.png" alt="mesto">
+                <h3 class="common_card__text">The Sun Event</h3>
             </div>
             <p>
                 Мы ждем вас на берегу озера Сенеж в загородном комплексе The Sun Event
             </p>
-            <button>Пострить маршрут</button>
+            <a class="location__direction" href="" target="_blank">Построить маршрут</a>
         </div>
     </div>
 </div>
@@ -138,7 +150,7 @@
 <div class="dresscode">
     <div class="container">
         <div class="dresscode__inner">
-            <h2>
+            <h2 class="dresscode__title">
                 Дресс-код
             </h2>
             <p>
@@ -162,8 +174,9 @@
                     <img src="https://placehold.jp/50x30.png" alt="cvet-5">
                 </li>
             </ul>
-            <div>
-                <img src="https://placehold.jp/300x300.png" alt="naryad">
+            <div class="common_card">
+                <img class="common_card__img" src="https://placehold.jp/300x300.png" alt="naryad">
+                <h3 class="common_card__text">вдохновляйтесь образами</h3>
             </div>
         </div>
     </div>
@@ -172,9 +185,10 @@
 <div class="wishes">
     <div class="container">
         <div class="wishes__inner">
-            <h2>
+            <h2 class="wishes__title">
                 Пожелания
             </h2>
+            <img src="https://placehold.jp/100x100.png" alt="flower">
             <p>
                 Сразу после свадьбы мы улетаем в свадебное путешествие, поэтому мы не успеем насладиться красотой подаренных
                 цветов и будем рады, если вместо цветов вы решите подарить нам бутылочку хорошего вина.
@@ -191,7 +205,7 @@
 <div class="blank">
     <div class="container">
         <div class="blank__inner">
-            <h2>
+            <h2 class="blank__title">
                 Анкета гостя
             </h2>
             <p>
@@ -241,7 +255,7 @@
 <div class="contact">
     <div class="container">
         <div class="contact__inner">
-            <h2>
+            <h2 class="contact__title">
                 Контакты
             </h2>
             <div>
@@ -263,14 +277,15 @@
 <div class="waiting">
     <div class="container">
         <div class="waiting__inner">
-            <h2>
+            <h2 class="waiting__title">
                 Будем вас ждать!
             </h2>
             <div>
                 <img src="https://placehold.jp/100x100.png" alt="heart">
             </div>
-            <div>
-                <img src="https://placehold.jp/300x300.png" alt="vmeste">
+            <div class="common_card">
+                <img class="common_card__img" src="https://placehold.jp/300x300.png" alt="vmeste">
+                <h3 class="common_card__text">С большой любовью, Саша и Настя!</h3>
             </div>
         </div>
     </div>

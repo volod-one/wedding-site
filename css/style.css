@@ -1,3 +1,7 @@
+.body {
+  font-family: "Caveat", cursive;
+}
+
 .container {
     margin-inline: auto;
     padding: 0 1.5rem;
@@ -17,6 +21,7 @@
 .waiting__inner {
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
     gap: 4rem;
     min-height: 100vh;
@@ -32,19 +37,22 @@
     justify-content: center;
 }
 
-.hero__description {
+/* .hero__description {
     width: 100%;
     display: grid;
     justify-content: center;
     text-align: center;
-}
+} */
 
 .hero__title {
     text-align: center;
 }
 
-.hero_equal {
-    text-align: center;
+.hero__description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .greetings {
@@ -57,7 +65,6 @@
 
 .schedule {
     background-color:azure;
-
 }
 
 .location {
@@ -82,4 +89,19 @@
 
 .waiting {
     background-color:azure;
+}
+
+.hero__title,
+.greetings__title,
+.sweety__title,
+.schedule__title,
+.location__title,
+.dresscode__title,
+.wishes__title,
+.blank__title,
+.contact__title,
+.waiting__title {
+    font-size: 4rem;
+    color: #253759;
+    background-color: aquamarine;
 }
