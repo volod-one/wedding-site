@@ -18,12 +18,12 @@
     <div class="container">
         <div class="hero__inner">
             <div class="hero__photos">
-                <div class="common_card">
-                    <img class="common_card__img" src="https://placehold.jp/300x300.png" alt="Sasha">
+                <div class="card__sasha common_card">
+                    <img class="common_card__img" src="https://placehold.jp/250x300.png" alt="Sasha">
                     <h3 class="common_card__text">Саша</h3>
                 </div>
-                <div class="common_card">
-                    <img class="common_card__img" src="https://placehold.jp/300x300.png" alt="Ksusha">
+                <div class="card__ksusha common_card">
+                    <img class="common_card__img" src="https://placehold.jp/250x300.png" alt="Ksusha">
                     <h3 class="common_card__text">Настя</h3>
                 </div>
             </div>
@@ -48,15 +48,16 @@
             <h2 class="greetings__title">
                 Узнали?
             </h2>
-            <p>
+            <p class="greetings__text">
                 Время пронеслось незаметно и у этих двух милых деток скоро свадьба!
+                <br>
                 Да-да, мы сами в шоке!
             </p>
-            <div>
-                <img src="https://placehold.jp/100x100.png" alt="star">
-            </div>
-            <div class="common_card">
-                <img class="common_card__img" src="https://placehold.jp/300x300.png" alt="vmeste">
+
+            <img class="greetings__decor" src="https://placehold.jp/100x100.png" alt="star">
+            
+            <div class="common_card greetings__card">
+                <img class="common_card__img" src="https://placehold.jp/250x300.png" alt="vmeste">
                 <h3 class="common_card__text">сердца полны любви</h3>
             </div>
         </div>
@@ -69,7 +70,7 @@
             <h2 class="sweety__title">
                 Дорогие и любимые
             </h2>
-            <p>
+            <p class="sweety__text">
                 Наша свадьба без вас не будет такой счастливой, уютной и веселой!
                 Приглашаем отметить этот день вместе с нами!
             </p>
@@ -135,11 +136,11 @@
             <h2 class="location__title">
                 Место проведения
             </h2>
-            <div class="common_card">
-                <img class="common_card__img" src="https://placehold.jp/300x300.png" alt="mesto">
+            <div class="location__card common_card">
+                <img class="common_card__img" src="https://placehold.jp/250x300.png" alt="mesto">
                 <h3 class="common_card__text">The Sun Event</h3>
             </div>
-            <p>
+            <p class="location__text">
                 Мы ждем вас на берегу озера Сенеж в загородном комплексе The Sun Event
             </p>
             <a class="location__direction" href="" target="_blank">Построить маршрут</a>
@@ -153,29 +154,29 @@
             <h2 class="dresscode__title">
                 Дресс-код
             </h2>
-            <p>
+            <p class="dresscode__text">
                 Мы очень старались сделать праздник красивым и будем рады, если в своих нарядах вы поддержите цветовую гамму
                 нашей свадьбы:
             </p>
-            <ul>
-                <li>
+            <ul class="dresscode__colors">
+                <li class="dresscode__color">
                     <img src="https://placehold.jp/50x30.png" alt="cvet-1">
                 </li>
-                <li>
+                <li class="dresscode__color">
                     <img src="https://placehold.jp/50x30.png" alt="cvet-2">
                 </li>
-                <li>
+                <li class="dresscode__color">
                     <img src="https://placehold.jp/50x30.png" alt="cvet-3">
                 </li>
-                <li>
+                <li class="dresscode__color">
                     <img src="https://placehold.jp/50x30.png" alt="cvet-4">
                 </li>
-                <li>
+                <li class="dresscode__color">
                     <img src="https://placehold.jp/50x30.png" alt="cvet-5">
                 </li>
             </ul>
-            <div class="common_card">
-                <img class="common_card__img" src="https://placehold.jp/300x300.png" alt="naryad">
+            <div class="dresscode__card common_card">
+                <img class="common_card__img" src="https://placehold.jp/250x300.png" alt="naryad">
                 <h3 class="common_card__text">вдохновляйтесь образами</h3>
             </div>
         </div>
@@ -189,12 +190,12 @@
                 Пожелания
             </h2>
             <img src="https://placehold.jp/100x100.png" alt="flower">
-            <p>
+            <p class="wishes__text">
                 Сразу после свадьбы мы улетаем в свадебное путешествие, поэтому мы не успеем насладиться красотой подаренных
                 цветов и будем рады, если вместо цветов вы решите подарить нам бутылочку хорошего вина.
             </p>
             <hr>
-            <p>
+            <p class="wishes__text">
                 Если хотите подарить нам ценный и нужный подарок, мы будем очень благодарны за вклад в бюджет нашей молодой
                 семьи.
             </p>
@@ -208,46 +209,52 @@
             <h2 class="blank__title">
                 Анкета гостя
             </h2>
-            <p>
+            <p class="blank__text">
                 Просим вас ответить на несколько вопросов до 20 июля, это поможет нам в организации торжества
             </p>
         
-            <form action="">
+            <div class="form-container">
+        <form class="blank__form" action="#" method="post">
+            <fieldset>
+                <label for="name">Ваше имя и фамилия</label>
+                <input type="text" id="name" name="name" autocomplete="off" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Will you attend?</legend>
                 <label>
-                    <input type="text">
+                    <input type="radio" name="attendance" value="yes" required> Yes
                 </label>
-                <div>
-                    <label for="budu">
-                        <input type="radio" name="budu-net" id="budu">
-                    </label>
-                    <label for="idk">
-                        <input type="radio" name="budu-net" id="idk">
-                    </label>
-                    <label for="net">
-                        <input type="radio" name="budu-net" id="net">
-                    </label>
-                </div>
-                <div>
-                    <label for="igristoe">
-                        <input type="checkbox" name="alc" id="igristoe">
-                    </label>
-                    <label for="beloe">
-                        <input type="checkbox" name="alc" id="beloe">
-                    </label>
-                    <label for="krasnoe">
-                        <input type="checkbox" name="alc" id="krasnoe">
-                    </label>
-                    <label for="wisky">
-                        <input type="checkbox" name="alc" id="wisky">
-                    </label>
-                    <label for="noalc">
-                        <input type="checkbox" name="alc" id="noalc">
-                    </label>
-                </div>
-                <button>
-                    Отправить
-                </button>
-            </form>
+                <label>
+                    <input type="radio" name="attendance" value="no"> No
+                </label>
+                <label>
+                    <input type="radio" name="attendance" value="maybe"> Maybe
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>What will you drink?</legend>
+                <label>
+                    <input type="checkbox" name="drink" value="water"> Water
+                </label>
+                <label>
+                    <input type="checkbox" name="drink" value="juice"> Juice
+                </label>
+                <label>
+                    <input type="checkbox" name="drink" value="soda"> Soda
+                </label>
+                <label>
+                    <input type="checkbox" name="drink" value="tea"> Tea
+                </label>
+                <label>
+                    <input type="checkbox" name="drink" value="coffee"> Coffee
+                </label>
+            </fieldset>
+
+            <button type="submit">Send</button>
+        </form>
+    </div>
         </div>
     </div>
 </div>
@@ -261,7 +268,7 @@
             <div>
                 <img src="https://placehold.jp/100x100.png" alt="plane">
             </div>
-            <p>
+            <p class="contact__text">
                 Если вы приготовили для нас сюрприз,
                 не забудьте предупредить об этом нашего свадебного организатора
             </p>
@@ -283,9 +290,9 @@
             <div>
                 <img src="https://placehold.jp/100x100.png" alt="heart">
             </div>
-            <div class="common_card">
-                <img class="common_card__img" src="https://placehold.jp/300x300.png" alt="vmeste">
-                <h3 class="common_card__text">С большой любовью, Саша и Настя!</h3>
+            <div class="waiting__card common_card">
+                <img class="common_card__img" src="https://placehold.jp/250x300.png" alt="vmeste">
+                <h3 class="common_card__text">С большой любовью,<br> Саша и Настя!</h3>
             </div>
         </div>
     </div>

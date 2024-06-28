@@ -25,6 +25,15 @@
     justify-content: center;
     gap: 4rem;
     min-height: 100vh;
+    padding-block: 2rem;
+}
+
+.card__sasha {
+    transform: rotate(-6deg);
+}
+
+.card__ksusha {
+    transform: rotate(6deg) translateY(2rem);
 }
 
 .hero {
@@ -59,8 +68,44 @@
     background-color:azure;
 }
 
+.greetings__inner {
+    position: relative;
+}
+
+.greetings__text {
+    max-width: 22rem;
+    color: #253759;
+    line-height: 2rem;
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-align: center;
+    z-index: 99999;
+}
+
+.greetings__decor {
+    position: absolute;
+    top: 35%;
+    right: 30%;
+    z-index: 1;
+}
+
+.greetings__card {
+    transform: rotate(-7deg);
+    z-index: 99999;
+}
+
 .sweety {
     background-color: beige;
+}
+
+.sweety__text {
+    max-width: 30rem;
+    color: #253759;
+    line-height: 2rem;
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-align: center;
+    z-index: 99999;
 }
 
 .schedule {
@@ -71,24 +116,196 @@
     background-color: beige;
 }
 
+.location__card,
+.dresscode__card {
+    transform: rotate(-1deg);
+}
+
+.location__text {
+    max-width: 22rem;
+    color: #253759;
+    line-height: 2rem;
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-align: center;
+    z-index: 99999;
+}
+
 .dresscode {
     background-color:azure;
 }
 
+.dresscode__text {
+    max-width: 30rem;
+    color: #253759;
+    line-height: 2rem;
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-align: center;
+    z-index: 99999;
+}
+
+.dresscode__colors {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.dresscode__color {
+    border-radius: .5rem;
+    overflow: hidden;
+    -webkit-box-shadow: 14px 14px 18px -11px rgba(37,55,89,0.28);
+    -moz-box-shadow: 14px 14px 18px -11px rgba(37,55,89,0.28);
+    box-shadow: 3px 3px 5px 0px rgba(37,55,89,0.28);
+}
+
+.dresscode__color > * {
+    display: block;
+}
+ 
 .wishes {
     background-color: beige;
+}
+
+.wishes__text {
+    max-width: 30rem;
+    color: #253759;
+    line-height: 2rem;
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-align: center;
+    z-index: 99999;
 }
 
 .blank {
     background-color:azure;
 }
 
+.blank__text {
+    max-width: 30rem;
+    color: #253759;
+    line-height: 2rem;
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-align: center;
+    z-index: 99999;
+}
+
+.blank__form {
+    display: flex;
+    flex-direction: column;
+    width: 40rem;
+}
+
+input[type="text"] {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #253759;
+    padding: 1rem;
+    font-size: 16px;
+}
+
+input[type="text"]:focus {
+    outline: none;
+}
+
+/* Remove default styles */
+input[type="radio"], input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    border: 2px solid #253759;
+    border-radius: 3px;
+    position: relative;
+    cursor: pointer;
+}
+
+/* Custom radio button */
+input[type="radio"] {
+    border-radius: 50%;
+}
+
+input[type="radio"]:checked::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #253759;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Custom checkbox */
+input[type="checkbox"] {
+    border-radius: 3px;
+}
+
+input[type="checkbox"]:checked::before {
+    content: '';
+    width: 6px;
+    height: 12px;
+    border: solid #253759;
+    border-width: 0 2px 2px 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+form > button {
+    align-self: center;
+    width: 20rem;
+    background-color: #253759;
+    color: white;
+    border: 2px solid #253759;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+form > button:hover {
+    background-color: white;
+    color: #253759;
+}
+
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+}
+
+
 .contact {
     background-color: beige;
 }
 
+.contact__text {
+    max-width: 22rem;
+    color: #253759;
+    line-height: 2rem;
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-align: center;
+    z-index: 99999;
+}
+
 .waiting {
     background-color:azure;
+}
+
+.waiting__card {
+    transform: rotate(5deg);
 }
 
 .hero__title,
