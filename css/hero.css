@@ -1,0 +1,16 @@
+.hero__photos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+}
+
+.hero__title {
+    text-align: center;
+}
+
+.hero__description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

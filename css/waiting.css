@@ -1,0 +1,7 @@
+
+.waiting {
+}
+
+.waiting__card {
+    transform: rotate(5deg);
+}

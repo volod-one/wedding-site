@@ -1,0 +1,36 @@
+.location {
+}
+
+.location__card {
+    transform: rotate(-1deg);
+}
+
+.location__text {
+    max-width: 22rem;
+    color: #253759;
+    line-height: 2rem;
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-align: center;
+    z-index: 99999;
+    font-family: "Montserrat", sans-serif;
+}
+
+.location__direction {
+    align-self: center;
+    width: 20rem;
+    background-color: #a8c4dc;
+    color: white;
+    border: 2px solid #a8c4dc;
+    padding: 10px 20px;
+    border-radius: 2rem;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    text-align: center;
+}
+
+.location__direction:hover {
+    background-color: white;
+    color: #a8c4dc;
+}

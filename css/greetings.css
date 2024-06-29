@@ -1,0 +1,29 @@
+.greetings {
+}
+
+.greetings__inner {
+    position: relative;
+}
+
+.greetings__text {
+    max-width: 22rem;
+    color: #253759;
+    line-height: 2rem;
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-align: center;
+    z-index: 99999;
+    font-family: "Montserrat", sans-serif;
+}
+
+.greetings__decor {
+    position: absolute;
+    top: 35%;
+    right: 30%;
+    z-index: 1;
+}
+
+.greetings__card {
+    transform: rotate(-7deg);
+    z-index: 99999;
+}

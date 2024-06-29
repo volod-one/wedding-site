@@ -1,0 +1,10 @@
+.sweety__text {
+    max-width: 30rem;
+    color: #253759;
+    line-height: 2rem;
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-align: center;
+    z-index: 99999;
+    font-family: "Montserrat", sans-serif;
+}

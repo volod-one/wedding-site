@@ -1,0 +1,38 @@
+.contact__title {
+    position: relative;
+}
+
+.contact__title_text {    
+    font-family: "Caveat", cursive;
+}
+
+.contact__icon-1 {
+    max-width: 5rem;
+    position: absolute;
+    bottom: -2.5rem;
+    right: -3rem;
+}
+
+.contact__text {
+    max-width: 22rem;
+    color: #253759;
+    line-height: 2rem;
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-align: center;
+    z-index: 99999;
+    font-family: "Montserrat", sans-serif;
+}
+
+.contact__contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.contact__contact_text {
+    font-family: "Caveat", cursive;
+    font-size: 2rem;
+}
