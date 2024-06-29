@@ -12,6 +12,10 @@
     
 }
 
+.common_card__img {
+    max-width: 15rem;
+}
+
 .common_card__text {
     font-size: 1.5rem;
     font-weight: 300;

@@ -26,3 +26,14 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+a {
+  text-decoration: none; /* Removes the underline */
+  color: inherit; /* Inherits the color from its parent element */
+  font-weight: normal; /* Resets the font weight */
+  font-style: normal; /* Resets the font style */
+  background: none; /* Removes any background color */
+  border: none; /* Removes any border */
+  padding: 0; /* Resets any padding */
+  margin: 0; /* Resets any margin */
+}
