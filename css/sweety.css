@@ -8,3 +8,9 @@
     z-index: 99999;
     font-family: "Montserrat", sans-serif;
 }
+
+.sweety__date {
+    background-color: #253759;
+    max-width: 14rem;
+    border-radius: 1rem;
+}

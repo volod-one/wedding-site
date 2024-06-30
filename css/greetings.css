@@ -27,3 +27,11 @@
     transform: rotate(-7deg);
     z-index: 99999;
 }
+
+@media (max-width: 600px) {
+    .greetings__decor {
+        max-width: 4rem;
+        top: 40%;
+        right: 1rem;
+    }
+}

@@ -32,6 +32,7 @@
 
 .schedule__content__title {
     font-size: 2.5rem;
+    color: #253759;
 }
 
 .schedule__content__body {
@@ -39,4 +40,25 @@
     line-height: 2rem;
     font-weight: 300;
     font-family: "Montserrat", sans-serif;
+}
+
+
+@media (max-width: 600px) {
+    .schedule__item {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .schedule__icon {
+        position: absolute;
+        max-width: 3rem;
+        top: 3rem;
+        right: 20%;
+    }
+
+    .schedule__icon-left {
+        left: 20%;
+    }
 }

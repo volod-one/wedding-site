@@ -22,3 +22,11 @@
     max-width: 14rem;
     box-shadow: #253759;
 }
+
+
+@media (max-width: 600px) {
+    .common_card {
+        padding: .5rem;
+        gap: .5rem;
+    }
+}
