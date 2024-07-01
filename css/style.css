@@ -25,6 +25,7 @@
     gap: 4rem;
     min-height: 100vh;
     padding-block: 2rem;
+    overflow: hidden;
 }
 
 .card__sasha {
