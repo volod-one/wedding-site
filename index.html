@@ -242,7 +242,7 @@
             </p>
 
             <div class="form-container">
-                <form class="blank__form" action="#" method="post">
+                <form id="myForm" class="blank__form" action="${process.env.GOOGLE_SCRIPT_URL}" method="post">
                     <fieldset class="blank__field">
                         <label for="name">Ваше имя и фамилия</label>
                         <input type="text" id="name" name="name" autocomplete="off" required>

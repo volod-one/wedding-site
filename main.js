@@ -57,3 +57,26 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', checkReveal);
     checkReveal(); // Initial check in case some elements are already in view
 });
+
+document.getElementById('myForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the default form submission
+
+    var formData = new FormData(this);
+
+    fetch(this.action, {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => {
+        if (response.ok) {
+            alert('Форма успешно отправлена!'); // Display success message
+            // Optionally reset the form
+            // this.reset();
+        } else {
+            throw new Error('Network response was not ok.');
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+    });
+});
