@@ -1,6 +1,4 @@
-.dresscode__card {
-    transform: rotate(-1deg);
-}
+
 
 .dresscode {
 }
@@ -9,17 +7,23 @@
     max-width: 30rem;
     color: #253759;
     line-height: 2rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 300;
     text-align: center;
     z-index: 99999;
     font-family: "Montserrat", sans-serif;
 }
 
+.dresscode__content {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+
 .dresscode__colors {
     display: flex;
     flex-direction: row;
-    gap: 1rem;
+    gap: .5rem;
 }
 
 .dresscode__color {
@@ -32,4 +36,44 @@
 
 .dresscode__color > * {
     display: block;
+}
+
+.dresscode__female,
+.dresscode__male {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 1.5rem;
+}
+
+
+.dresscode__female-card {
+    transform: rotate(-1deg);
+}
+
+.dresscode__male-card {
+    transform: rotate(1deg);
+}
+
+.dresscode__card {
+    padding-top: 1.5rem;
+    gap: 2rem;
+    text-align: center;
+}
+
+
+@media (max-width: 600px) {
+    .dresscode__card  {
+        max-width: 10rem;
+    }
+
+    .common_card__img {
+        display: block;
+        width: fit-content;
+    }
+    
+    .common_card__img {
+        max-width: 7rem;
+    }
 }

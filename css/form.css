@@ -5,7 +5,7 @@
     max-width: 25rem;
     color: #253759;
     line-height: 2rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 300;
     text-align: center;
     z-index: 99999;
@@ -97,9 +97,9 @@ input[type="checkbox"]:checked::before {
 form > button {
     align-self: center;
     width: 20rem;
-    background-color: #a8c4dc;
+    background-color: #ea83ac;
     color: white;
-    border: 2px solid #a8c4dc;
+    border: 2px solid #ea83ac;
     padding: 10px 20px;
     border-radius: 2rem;
     font-size: 16px;
@@ -109,7 +109,7 @@ form > button {
 
 form > button:hover {
     background-color: white;
-    color: #a8c4dc;
+    color: #ea83ac;
 }
 
 

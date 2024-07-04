@@ -9,7 +9,7 @@
     max-width: 22rem;
     color: #253759;
     line-height: 2rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 300;
     text-align: center;
     z-index: 99999;
@@ -32,7 +32,7 @@
 
 .location__direction:hover {
     background-color: white;
-    color: #a8c4dc;
+    color: #ea83ac;
 }
 
 .location__content {
