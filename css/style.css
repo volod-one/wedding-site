@@ -2,6 +2,10 @@
   font-family: "Caveat", cursive;
 }
 
+.page {
+    overflow: hidden;
+}
+
 .container {
     margin-inline: auto;
     padding: 0 1.5rem;
@@ -25,7 +29,6 @@
     gap: 4rem;
     min-height: 100vh;
     padding-block: 2rem;
-    overflow: hidden;
 }
 
 .card__sasha {
@@ -87,6 +90,7 @@
     font-size: 4rem;
     color: #253759;
     text-align: center;
+    line-height: 4rem;
 }
 
 .reveal {
