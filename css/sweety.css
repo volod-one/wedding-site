@@ -1,16 +1,10 @@
 .sweety__text {
     max-width: 30rem;
-    color: #253759;
-    line-height: 2rem;
-    font-size: 1rem;
-    font-weight: 300;
-    text-align: center;
-    z-index: 99999;
-    font-family: "Montserrat", sans-serif;
 }
 
 .sweety__date {
-    background-color: #253759;
+    /* background-color: #253759; */
     max-width: 14rem;
-    border-radius: 1rem;
+    position: relative; /* Needed to position the pseudo-element */
+    overflow: hidden; /* Ensures the pseudo-element stays within the border radius */
 }
