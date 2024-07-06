@@ -29,4 +29,9 @@
         padding: .5rem;
         gap: .5rem;
     }
+
+    .common_card__img {
+        display: block;
+        width: fit-content;
+    }
 }

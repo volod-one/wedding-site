@@ -26,9 +26,37 @@
     gap: .5rem;
 }
 
+.dresscode__colors > .color-1 {
+    background-color: rgb(199, 223, 254);
+}
+
+.dresscode__colors > .color-2 {
+    background-color: rgb(212, 238, 255);
+}
+
+.dresscode__colors > .color-3 {
+    background-color: rgb(215, 181, 229);
+}
+
+.dresscode__colors > .color-4 {
+    background-color: rgb(195, 190, 242);
+}
+
+.dresscode__colors > .color-5 {
+    background-color: rgb(245, 237, 249);
+}
+
+.dresscode__colors > .color-6 {
+    background-color: rgb(239, 218, 226);
+}
+
+
+
 .dresscode__color {
     border-radius: .5rem;
     overflow: hidden;
+    width: 3rem;
+    height: 1.5rem;
     -webkit-box-shadow: 14px 14px 18px -11px rgba(37,55,89,0.28);
     -moz-box-shadow: 14px 14px 18px -11px rgba(37,55,89,0.28);
     box-shadow: 3px 3px 5px 0px rgba(37,55,89,0.28);
@@ -62,18 +90,17 @@
     text-align: center;
 }
 
+.dresscode__card > .common_card__img {
+    max-width: 8rem;
+}
+
 
 @media (max-width: 600px) {
     .dresscode__card  {
         max-width: 10rem;
     }
 
-    .common_card__img {
-        display: block;
-        width: fit-content;
-    }
-    
-    .common_card__img {
-        max-width: 7rem;
+    .dresscode__card > .common_card__img {
+        max-width: 8rem;
     }
 }

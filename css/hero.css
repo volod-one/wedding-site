@@ -16,9 +16,59 @@
     justify-content: center;
 }
 
+.hero__card {
+    
+}
+
+.card__sasha {
+    transform: rotate(-6deg);
+    animation: rotate-sasha 8s infinite linear;
+}
+
+@keyframes rotate-sasha {
+    0% {
+        transform: rotate(-6deg);
+    }
+    25% {
+        transform: rotate(-4deg);
+    }
+    50% {
+        transform: rotate(-6deg);
+    }
+    75% {
+        transform: rotate(-8deg);
+    }
+    100% {
+        transform: rotate(-6deg);
+    }
+}
+
+.card__ksusha {
+    transform: rotate(6deg) translateY(2rem);
+    animation: rotate-ksusha 8s infinite linear;
+}
+
+@keyframes rotate-ksusha {
+    0% {
+        transform: rotate(6deg) translateY(2rem);
+    }
+    25% {
+        transform: rotate(4deg) translateY(2rem);
+    }
+    50% {
+        transform: rotate(6deg) translateY(2rem);
+    }
+    75% {
+        transform: rotate(8deg) translateY(2rem);
+    }
+    100% {
+        transform: rotate(6deg) translateY(2rem);
+    }
+}
+
 
 @media (max-width: 600px) {
     .hero__card-photo {
-        max-width: 8rem;
+        max-width: 9rem;
     }
 }

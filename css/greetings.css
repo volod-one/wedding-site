@@ -1,6 +1,3 @@
-.greetings {
-}
-
 .greetings__inner {
     position: relative;
 }
@@ -18,8 +15,8 @@
 
 .greetings__decor {
     position: absolute;
-    top: 35%;
-    right: 30%;
+    top: 30%;
+    right: 0%;
     z-index: 1;
 }
 
@@ -31,7 +28,7 @@
 @media (max-width: 600px) {
     .greetings__decor {
         max-width: 4rem;
-        top: 40%;
+        top: 33%;
         right: 1rem;
     }
 }
