@@ -61,9 +61,11 @@ document.addEventListener('DOMContentLoaded', function() {
 document.getElementById('myForm').addEventListener('submit', function(event) {
     event.preventDefault(); // Prevent the default form submission
 
+    const googleScriptUrl = "https://script.google.com/macros/s/AKfycbzR1fBzReEFieEoCBf9tQpNhrvdtwLxS6Ljt8f3tHMbQBOJUhe4ikt8CjJcdBV5Ua0k8Q/exec"
+
     var formData = new FormData(this);
 
-    fetch(this.action, {
+    fetch(googleScriptUrl, {
         method: 'POST',
         body: formData
     })
@@ -71,7 +73,7 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
         if (response.ok) {
             alert('Форма успешно отправлена!'); // Display success message
             // Optionally reset the form
-            // this.reset();
+             this.reset();
         } else {
             throw new Error('Network response was not ok.');
         }
