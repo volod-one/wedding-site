@@ -47,10 +47,9 @@
 .contact__title,
 .waiting__title {
     font-size: 4rem;
-    color: #ea83ac;
+    color: #253759;
     text-align: center;
     line-height: 4rem;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }
 
 .greetings__text,
@@ -58,14 +57,13 @@
 .location__text,
 .dresscode__text,
 .wishes__text {
-    color: #ea83ac;
+    color: #253759;
     line-height: 2rem;
     font-size: 1rem;
     font-weight: 300;
     text-align: center;
     z-index: 99999;
     font-family: "Montserrat", sans-serif;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .reveal {

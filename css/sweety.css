@@ -3,8 +3,12 @@
 }
 
 .sweety__date {
-    /* background-color: #253759; */
-    max-width: 14rem;
+    max-width: 20rem;
     position: relative; /* Needed to position the pseudo-element */
     overflow: hidden; /* Ensures the pseudo-element stays within the border radius */
+}
+
+.sweety__date-img {
+    display: block;
+    width: 100%;
 }
