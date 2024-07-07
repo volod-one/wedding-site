@@ -62,4 +62,8 @@
     .schedule__icon-left {
         left: 20%;
     }
+
+    .schedule__time {
+        width: 100%;
+    }
 }

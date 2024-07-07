@@ -45,6 +45,7 @@
 .blank__title,
 .contact__title,
 .waiting__title {
+    width: 100%;
     font-size: 4rem;
     color: #253759;
     text-align: center;
