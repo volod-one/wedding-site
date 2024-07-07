@@ -24,4 +24,8 @@
         top: 33%;
         right: 1rem;
     }
+    
+    .greetings__card-text {
+        text-align: center;
+    }
 }
